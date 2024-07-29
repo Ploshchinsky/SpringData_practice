@@ -22,7 +22,7 @@ public class Employee {
     private String position;
     private Double salary;
 
-    @ManyToOne(fetch = FetchType.EAGER)
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "department_id")
     @JsonBackReference
     private Department department;
